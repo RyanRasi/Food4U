@@ -12,7 +12,7 @@ public class main {
 		// TODO Auto-generated constructor stub
 
 
-	public static void mainGame(String[] args) {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub		
 		System.out.println("Rock Paper Scissors\n---------\nRyan Rasi\n---------\n");
 		startGame();
@@ -28,7 +28,7 @@ public class main {
 	
 	switch (choice) {
 	case "rock":
-		System.out.println("Rock Selected\n---------");
+		System.out.println("Rock Selected\n--------");
 		break;
 	case "paper":
 		System.out.println("Paper Selected\n---------");
@@ -77,6 +77,13 @@ public class main {
 		System.out.println("Computer Wins!");
 		computerScore = +1;
 	}
+	if (choice.equals("rock") && (computerChoice.equals("rock"))){
+		System.out.println("Draw encountered!");
+	} else if (choice.equals("paper") && (computerChoice.equals("paper"))){
+		System.out.println("Draw encountered!");
+	} else if (choice.equals("scissors") && (computerChoice.equals("scissors"))){
+		System.out.println("Draw encountered!");
+	}
 System.out.println("Player has a score of: " + playerScore + "\nComputer has a score of: " + computerScore);
 
 do {
@@ -95,5 +102,7 @@ case ("exit"):
 	System.exit(0);
 }
 		}
-	}
+	
+		}
+
 	

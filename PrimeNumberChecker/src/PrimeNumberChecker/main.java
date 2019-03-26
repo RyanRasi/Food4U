@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class main {
 
 	static int low = 1; //Starting min
-    static int high = 100;	//Starting max
+    static int high = 100000;	//Starting max
     
     
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 		System.out.println("Prime number checker\n---------Ryan Rasi---------");
-		System.out.println("Starts at 1 and increments but asks user input every 100 results to continue");
+		System.out.println("Starts at 1 and increments but asks user input every 100000 results to continue");
 
 		primeNumberSolver();
 	}
@@ -45,7 +45,7 @@ public class main {
 		} while  (!decision.equals("y") && (!decision.contentEquals("n")));
 	switch (decision) {
 	case ("y"):
-		high = high + 100;		//Increment to increase the max limit by
+		high = high + 100000;		//Increment to increase the max limit by
 		primeNumberSolver();
 		break;
 	case ("n"):
