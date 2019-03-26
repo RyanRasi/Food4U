@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author ryan
- *
- */
-module rockPaperScissors {
-}
